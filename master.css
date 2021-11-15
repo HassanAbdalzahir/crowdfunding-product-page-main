@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+/*
+    The General, For both devices.. 1440  & 375 px;
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #FAFAFA;
+    background-image: url(images/image-hero-desktop.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+}
+ul{
+    list-style: none;    outline: none;
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.container{
+    width:80%;
+    margin: auto;
+}
+/* The Navigation Bar and Upper Section*/
+@media screen and (min-width: 1440px) {
+    .navbar{
+        background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.623),
+        rgba(255, 255, 255, 0));
+        width: 92%;
+        padding: 4%;
+    }
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .navbar .container .logo {
+        font-size: xx-large;
+        font-family: 'Commissioner', sans-serif;
+        font-weight: bold;
+    }
+    .navbar .container .links ul{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .navbar .container .links ul li{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sheets-container{
+       width: 750px;
+       height: auto;
+       border-radius: 15px;
+       margin-top: 150px;
+       display: grid;
+       grid-template-rows: auto auto auto;
+    }
+    .sheets-container .sheet{
+        width: 100%;
+        height: auto;
+        background-color: #fffff8;
+        border-radius: 15px;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.048);
+    }
+    .sheets-container .sheet.sheet1, .sheets-container .sheet.sheet1 .container{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sheets-container .sheet.sheet1 .container .logo{
+        position: relative;
+        top: -28px;
+    }
+    .sheets-container .sheet.sheet1 .container .quote {
+        /**/
+        color-scheme:initial;
+    }
+    .sheets-container .sheet.sheet1 .container .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    .sheets-container .sheet.sheet1 .container .buttons .button{
+        user-select: none;
+        cursor: pointer;
+        width: 120px;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 90px;
+        height: 25px;
+        font-weight:400;
+
+    }
+    .sheets-container .sheet.sheet1 .container .buttons .button.back{
+        background: hsl(176, 50%, 47%);
+        text-align: center;
+        color: ivory;
+
+    }
+    .sheets-container .sheet.sheet1 .container .buttons .button.mark{
+        position: relative;
+        text-align: end;
+        background: #d1cdcd;
+    }
+    .sheets-container .sheet.sheet1 .container .buttons .button.mark svg{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
