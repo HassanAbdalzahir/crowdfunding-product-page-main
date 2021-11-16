@@ -43,6 +43,7 @@ ul li a{
     .navbar .container {
         display: flex;
         justify-content: space-between;
+        width: 1200px;
         
     }
     .navbar .container .logo {
@@ -162,5 +163,43 @@ ul li a{
         height: 100%;
         border-radius: 15px;
         background-color: hsl(176, 50%, 47%);
+    }
+    .sheets-container .sheet.sheet3 .container{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    /*.sheets-container .sheet.sheet3 .container .info {
+ 
+    }*/
+    .sheets-container .sheet.sheet3 .container .reward{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+        height: auto;
+        box-shadow: 0px 0px .9px .1px rgba(0, 0, 0, 0.267);
+        padding: 30px;
+        border-radius: 5px;
+    }
+    .sheets-container .sheet.sheet3 .container .reward .section1{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+    .sheets-container .sheet.sheet3 .container .reward .section1 > span{
+        color: hsl(176, 50%, 47%);
+    }
+    .sheets-container .sheet.sheet3 .container .reward .section3{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sheets-container .sheet.sheet3 .container .reward .section3 .button{
+        background-color: hsl(176, 50%, 47%);
+        color: white;
+        padding:10px 20px;
+        border-radius: 40px;
+        user-select: none;
+        cursor: pointer;
     }
 }
