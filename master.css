@@ -35,28 +35,25 @@ ul li a{
 @media screen and (max-width: 1365px) { /*Mobile Query*/
     body{
         background-image: url(images/image-hero-mobile.jpg);
-    };
+    }
     .navbar{
         background: linear-gradient(to bottom,
         rgba(0, 0, 0, 0.623),
         rgba(255, 255, 255, 0));
         width: 92%;
-        padding: 40px;
+        padding: 4%;
         color: ivory;
     }
     .navbar .container {
         display: flex;
         justify-content: space-between;
-        width: 99%;
-        padding: 30px;
+        width: 100%;
+        margin-top: 20px;
     }
     .navbar .container .logo {
         font-size: xx-large;
         font-family: 'Commissioner', sans-serif;
         font-weight: bold;
-        color: ivory;
-        position: relative;
-        right: 100px ;
     }
     .navbar .container .links ul{
         display: flex;
@@ -68,6 +65,9 @@ ul li a{
     }
     .navbar .container .links ul li{
         margin-left: 25px;
+    }
+    .navbar .container .listButton{
+        cursor: pointer;
     }
 }
 
@@ -98,6 +98,9 @@ ul li a{
     }
     .navbar .container .links ul li{
         margin-left: 25px;
+    }
+    .navbar .container .listButton{
+        display: none;
     }
 }
 /*The rist of page*/
