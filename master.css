@@ -31,7 +31,47 @@ ul li a{
     margin: auto;
 }
 /* The Navigation Bar and Upper Section*/
-@media screen and (min-width: 1366px) {
+
+@media screen and (max-width: 1365px) { /*Mobile Query*/
+    body{
+        background-image: url(images/image-hero-mobile.jpg);
+    };
+    .navbar{
+        background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.623),
+        rgba(255, 255, 255, 0));
+        width: 92%;
+        padding: 40px;
+        color: ivory;
+    }
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        width: 99%;
+        padding: 30px;
+    }
+    .navbar .container .logo {
+        font-size: xx-large;
+        font-family: 'Commissioner', sans-serif;
+        font-weight: bold;
+        color: ivory;
+        position: relative;
+        right: 100px ;
+    }
+    .navbar .container .links ul{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: -999px;
+        right: -999px;
+        
+    }
+    .navbar .container .links ul li{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 1366px) { /*Desktop Query*/
     .navbar{
         background: linear-gradient(to bottom,
         rgba(0, 0, 0, 0.623),
@@ -60,8 +100,177 @@ ul li a{
         margin-left: 25px;
     }
 }
-
-@media screen and (min-width: 1366px) {
+/*The rist of page*/
+@media screen and (max-width: 1365px) {/*The Mobile query*/
+    .sheets-container{
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+        margin-top: 150px;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-gap: 20px;
+     }
+     .sheets-container .sheet{
+         width: 100%;
+         height: auto;
+         background-color: #fffff8;
+         border-radius: 15px;
+         box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.048);
+     }
+     .sheets-container .sheet.sheet1, .sheets-container .sheet.sheet1 .container{
+         color: black;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .sheets-container .sheet.sheet1 .container .logo{
+         position: relative;
+         top: -28px;
+     }
+     .sheets-container .sheet.sheet1 .container .quote {
+         /**/
+         color-scheme:initial;
+         text-align: center;
+     }
+     .sheets-container .sheet.sheet1 .container .buttons {
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+         margin: 30px;
+     }
+     .sheets-container .sheet.sheet1 .container .buttons .button{
+         user-select: none;
+         cursor: pointer;
+         width: 120px;
+         padding: 15px;
+         font-size: 20px;
+         border-radius: 90px;
+         height: 25px;
+         font-weight:400;
+        width: 60%;
+     }
+     .sheets-container .sheet.sheet1 .container .buttons .button.back{
+         background: hsl(176, 50%, 47%);
+         text-align: center;
+         color: ivory;
+        
+     }
+     .sheets-container .sheet.sheet1 .container .buttons .button.mark{
+         position: relative;
+         text-align: end;
+         background: #d1cdcd;
+         font-size: 0;
+         width: 0;
+         height: 0;
+     }
+     .sheets-container .sheet.sheet1 .container .buttons .button.mark svg{
+         position: absolute;
+         left: -15px;
+         top: 0;
+     }
+     .sheets-container .sheet.sheet2 .container{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .sheets-container .sheet.sheet2 .details{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         width: 100%;
+         padding: 30px;
+         text-align: center;
+     }
+     .sheets-container .sheet.sheet2 .details .detail:not(:last-child) {
+         position: relative;
+         margin-bottom: 10px;
+         border-bottom: rgba(29, 28, 28, 0.24) solid .1px;
+     }
+     /*
+     .sheets-container .sheet.sheet2 .details .detail:not(:last-child)::after {
+         height: 1px;
+         display: inline-block;
+         width: 60px;
+         background: #0c010169;
+         border-top: 1px white;
+         content: '';
+         position: absolute;
+         right: 0px;
+         top: 90px;
+     }
+     */
+     .sheets-container .sheet.sheet2 .progress-bar{
+         width: 100%;
+         height: 20px;
+         border-radius: 15px;
+         background: #d1cdcd;
+         margin-bottom: 30px;
+     }
+     .sheets-container .sheet.sheet2 .progress-bar .progress {
+         width: 89.914%;
+         height: 100%;
+         border-radius: 15px;
+         background-color: hsl(176, 50%, 47%);
+     }
+     .sheets-container .sheet.sheet3 .container{
+         padding: 40px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;    
+     }
+     /*.sheets-container .sheet.sheet3 .container .info {
+  
+     }*/
+     .sheets-container .sheet.sheet3 .container .reward{
+         display: flex;
+         flex-direction: column;
+         margin: 40px 0;
+         height: auto;
+         box-shadow: 0px 0px .9px .1px rgba(0, 0, 0, 0.267);
+         padding: 30px;
+         border-radius: 5px;
+         position: relative;
+     }
+     .sheets-container .sheet.sheet3 .container .reward .section1{
+         display: flex;
+         justify-content: space-between;
+         margin: 10px 0;
+     }
+     .sheets-container .sheet.sheet3 .container .reward .section1 > span{
+         color: hsl(176, 50%, 47%);
+         font-size: small;
+     }
+     .sheets-container .sheet.sheet3 .container .reward .section3{
+         display: flex;
+         justify-content: space-between;
+     }
+     .sheets-container .sheet.sheet3 .container .reward .section3 .button{
+         background-color: hsl(176, 50%, 47%);
+         color: white;
+         padding:10px 20px;
+         border-radius: 40px;
+         user-select: none;
+         cursor: pointer ;
+     }
+     .sheets-container .sheet.sheet3 .container .reward .disabled{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         border-radius: 5px;
+       /*  background-color: rgba(0, 0, 0, 0.027);*/
+     }
+     .sheets-container .sheet.sheet3 .container .reward.disabled{
+         opacity: .7;
+     }
+     .sheets-container .sheet.sheet3 .container .reward.disabled .section3 .button{
+         background-color: rgba(0, 0, 0, 0.363);
+     }
+}
+@media screen and (min-width: 1366px) { /*the Desktop query*/
     .sheets-container{
        width: 750px;
        height: auto;
@@ -181,6 +390,7 @@ ul li a{
         box-shadow: 0px 0px .9px .1px rgba(0, 0, 0, 0.267);
         padding: 30px;
         border-radius: 5px;
+        position: relative;
     }
     .sheets-container .sheet.sheet3 .container .reward .section1{
         display: flex;
@@ -200,6 +410,21 @@ ul li a{
         padding:10px 20px;
         border-radius: 40px;
         user-select: none;
-        cursor: pointer;
+        cursor: pointer ;
+    }
+    .sheets-container .sheet.sheet3 .container .reward .disabled{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      /*  background-color: rgba(0, 0, 0, 0.027);*/
+    }
+    .sheets-container .sheet.sheet3 .container .reward.disabled{
+        opacity: .7;
+    }
+    .sheets-container .sheet.sheet3 .container .reward.disabled .section3 .button{
+        background-color: rgba(0, 0, 0, 0.363);
     }
 }
